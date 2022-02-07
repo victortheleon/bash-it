@@ -29,7 +29,10 @@ function prompt_command() {
 	PS1+="${reset_color?}in "
 	PS1+="${green?}\w\n"
 	PS1+="${bold_cyan?}$(scm_prompt_char_info) "
-	PS1+="${green?}→${reset_color?} "
+	PS1+="${yellow?}🟠${reset_color?}"
+	PS1+="${green?}🟡${reset_color?}"
+	PS1+="${white?}🟢${reset_color?}"
+	PS1+="${green?}⏩${reset_color?} "
 }
 
 : "${THEME_SHOW_CLOCK_CHAR:="true"}"
